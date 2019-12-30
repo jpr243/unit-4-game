@@ -17,11 +17,12 @@ var startReset = function() {
 
   $("#random").html("" + randomNumber);
   $("#random").css({
-    "background-color": "green",
+    "background-color": "blue",
+    color: "white",
     margin: "10px",
     "font-size": "50px",
-    padding: "2px 0px 100px 2px",
-    "text-align": "left"
+    padding: "2px 0px 50px 2px",
+    "text-align": "center"
   });
 
   for (var i = 0; i < 4; i++) {
@@ -41,12 +42,11 @@ var startReset = function() {
   }
   $("#score").html(" " + score);
   $("#score").css({
-    color: "white",
-    "background-color": "teal",
+    "background-color": "grey",
     margin: "10px 5px 5px 20px",
     "font-size": "50px",
-    padding: "2px 0px 100px 0px",
-    "text-align": "left"
+    padding: "0px 0px 10px 0px",
+    "text-align": "center"
   });
 };
 
@@ -56,7 +56,7 @@ $(document).on("click", ".crystal", function() {
   var num = parseInt($(this).attr("num-random"));
 
   score += num;
-  $("#score").html("" + score);
+  $("#score").html(" " + score);
 
   console.log(score);
 
